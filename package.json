@@ -33,7 +33,7 @@
     "vitest": "latest"
   },
   "stackblitz": {
-    "startCommand": "pnpm run test:ui"
+    "startCommand": "pnpm run test:run"
   },
   "dependencies": {
     "@pg/button": "workspace:*",
