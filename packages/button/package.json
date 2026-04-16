@@ -1,0 +1,11 @@
+{
+  "name": "@pg/button",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "main": "src/index.js",
+  "dependencies": {
+    "@pg/utils": "workspace:*",
+    "storybook": "10.3.3"
+  }
+}

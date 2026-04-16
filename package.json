@@ -4,17 +4,41 @@
   "private": true,
   "license": "MIT",
   "main": "index.js",
+  "packageManager": "pnpm@9.15.3",
   "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
     "test": "vitest",
     "test:ui": "vitest --ui",
-    "test:run": "vitest run"
+    "test:run": "vitest run",
+    "test:run:sb": "vitest run --project=storybook",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
   "devDependencies": {
+    "@chromatic-com/storybook": "^5.1.2",
+    "@storybook/addon-a11y": "10.3.3",
+    "@storybook/addon-docs": "10.3.3",
+    "@storybook/addon-vitest": "10.3.3",
+    "@storybook/react-vite": "10.3.3",
+    "@vitejs/plugin-react": "^6.0.1",
+    "@vitest/browser-playwright": "4.1.4",
+    "@vitest/coverage-v8": "4.1.4",
     "@vitest/ui": "latest",
+    "playwright": "^1.59.1",
+    "prop-types": "^15.8.1",
+    "storybook": "10.3.3",
     "vite": "latest",
     "vitest": "latest"
   },
   "stackblitz": {
-    "startCommand": "npm run test:ui"
+    "startCommand": "pnpm run test:ui"
+  },
+  "dependencies": {
+    "@pg/button": "workspace:*",
+    "@pg/utils": "workspace:*",
+    "react": "^19.2.5",
+    "react-dom": "^19.2.5"
   }
 }
