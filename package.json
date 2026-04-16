@@ -10,8 +10,8 @@
     "build": "vite build",
     "preview": "vite preview",
     "test": "vitest",
-    "test:ui": "vitest --ui",
-    "test:run": "vitest run",
+    "test:ui": "vitest --project=unit --ui",
+    "test:run": "vitest --project=unit run",
     "test:run:sb": "vitest run --project=storybook",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
@@ -22,14 +22,14 @@
     "@storybook/addon-docs": "10.3.3",
     "@storybook/addon-vitest": "10.3.3",
     "@storybook/react-vite": "10.3.3",
-    "@vitejs/plugin-react": "^6.0.1",
+    "@vitejs/plugin-react": "^5.2.0",
     "@vitest/browser-playwright": "4.1.4",
     "@vitest/coverage-v8": "4.1.4",
     "@vitest/ui": "latest",
     "playwright": "^1.59.1",
     "prop-types": "^15.8.1",
     "storybook": "10.3.3",
-    "vite": "latest",
+    "vite": "^7",
     "vitest": "latest"
   },
   "stackblitz": {

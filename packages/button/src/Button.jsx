@@ -11,11 +11,9 @@ export const Button = ({
   ...props
 }) => {
   const mode = primary ? 'storybook-button--primary' : 'storybook-button--secondary';
-  if (!primary) {
-    console.log("### 1) LOG");
-    console.warn("### 2) WARN");
-    console.error("### 3) ERROR");
-  }
+  console.log("COMPONENT ### 1) LOG");
+  console.warn("COMPONENT ### 2) WARN");
+  console.error("COMPONENT ### 3) ERROR");
   return (
     <button
       type="button"

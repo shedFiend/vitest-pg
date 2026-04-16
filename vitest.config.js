@@ -16,6 +16,15 @@ export default defineConfig({
           name: "unit",
           environment: "node",
           include: ["packages/*/test/**/*.test.js"],
+          onUnhandledError(error) {
+            // doesn't work
+            // Ignore all errors
+            return false
+          },
+          onConsoleLog(log, type) {
+            // doesn't work
+            return false;
+          },
         },
       },
       {
@@ -28,10 +37,13 @@ export default defineConfig({
         ],
         test: {
           name: "storybook",
-          onUnhandledError: (err) => {
-            return false;
+          onUnhandledError(error) {
+            // doesn't work
+            // Ignore all errors
+            return false
           },
           onConsoleLog(log, type) {
+            // doesn't work
             return false;
           },
           browser: {
